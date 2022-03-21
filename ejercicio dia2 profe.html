@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>ejercicio profe en clases </h2>
+    <script>
+        //ARRAYS
+        const arrayVacia = []
+        console.log(arrayVacia)
+        const arrayConObjetos = [1, true, "hola", ["a", "b", "c"]]
+        console.log(arrayConObjetos)
+        console.log(arrayConObjetos[3][2])
+        const color = ["Azul", "Rojo"]
+            //Agregar uno al final
+        color.push("Blanco")
+            //Agregar uno al Principio
+        color.unshift("Negro")
+            //Quitar uno al final
+        color.pop()
+            //Quitar uno del principio
+        color.shift()
+        console.log(color)
+            //Funciones
+        function escribir(algo) {
+            console.log(algo)
+        }
+        escribir(color)
+
+        function square(num) {
+            return num * num
+        }
+        console.log(square(2))
+        let radio = 6
+        let areaCirculo = PI * square(radio)
+        console.log(areaCirculo)
+
+        function saludar(nombre = "Desconocido", edad = "0") {
+            console.log("Hola soy " + nombre + " y tengo " + edad + " años.")
+            console.log(`Hola soy ${nombre} y tengo ${edad} años.`)
+        }
+        saludar("Pedrito", 7)
+        saludar()
+            // Ejemplos de True
+        console.log(7 == 7)
+        console.log("7" == 7)
+        console.log(0 == false)
+            // Ejemplos de Falso
+        console.log("7" === 7)
+        console.log(0 === false)
+            //Incremento de 1
+        let i = 2
+        console.log(i) //2
+            //Imprime y luego suma
+        console.log(i++) //2
+            //Suma y luego imprime
+        console.log(++i)
+            // ! (Not)
+        console.log(!true)
+            //  || (or)
+        console.log((9 === 9) || ("9" === 9))
+            // && (and)
+        console.log((9 === 9) && ("9" === 9))
+            //----Condicionales (If - Else)----
+        let edad = 17;
+        if (edad >= 18) {
+            console.log("Es mayor de edad")
+        } else {
+            console.log("Es menor de edad")
+        }
+        let hora = 19
+        if (hora >= 0 && hora <= 5) {
+            console.log("A esa hora duermo")
+        } else if (hora >= 6 && hora <= 12) {
+            console.log("Buenos dias")
+        } else if (hora >= 13 && hora <= 18) {
+            console.log("Buenos dias")
+        } else {
+            console.log("Buenas Noches")
+        }
+        //Switch-Case
+        let dia = 9;
+        switch (dia) {
+            case 0:
+                console.log("Lunes")
+                break;
+            case 1:
+                console.log("Martes")
+                break;
+            case 2:
+                console.log("Miercoles")
+                break;
+            case 3:
+                console.log("Jueves")
+                break;
+            case 4:
+                console.log("Viernes")
+                break;
+            case 5:
+                console.log("Sabado")
+                break;
+            case 6:
+                console.log("Domingo")
+                break;
+            default:
+                console.log("No es un dia")
+                break;
+        }
+        //CICLOS (While, Do while, for )
+        let contador = 0;
+        //While
+        while (contador < 10) {
+            console.log("while" + contador)
+                //contador +=2
+            contador = contador + 2
+        }
+        //Do-While
+        console.log(contador)
+        do {
+            console.log("do-while" + contador)
+                //contador +=2
+            contador = contador + 2
+        } while (contador < 10)
+        //For
+        for (let i = 0; i < 10; i++) {
+            console.log("for" + i)
+        }
+        const lista = ["a", "b", "c", "d", "e"]
+            //For In
+        for (indice in lista) {
+            console.log(lista[indice])
+        }
+        console.log("--------")
+            //For Of
+        for (letra of lista) {
+            console.log(letra)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //ejercicio 4
+        const repetircadenatexto = (texto = "", veces = undefined) => {
+            if (!texto) return console.warn("no has ingresado ningua cadena texto");
+            if (veces === undefined) return console.warn("no ingresaste el n° veces el cadena de texto");
+            if (veces === 0) return console.error("wl n° de veces no puede ser 0");
+            if (math.sign(veces) === 1) return console.error("el n° de veces no debne ser negativo");
+
+            for (let i = 1; i <= veces; i++) console.info("${texto},${i},");
+        }
+        repetircadenatexto("hola mundo", 3);
+        repetircadenatexto("hola mundo", 0);
+        repetircadenatexto("hola mundo", -30);
+        repetircadenatexto("", -30);
+        repetircadenatexto("hola mundo");
+
+        /*Programa una función que dado un Array de numeros, devuelva la suma de esos numeros, ejemplo:
+         miFuncion([1,2,3,4,5]) devolverá 15.*/
+        function arraynum()
+        /*Programa una función que dado un Array de numeros, devuelva el mayor de esos numeros, ejemplo: miFuncion([1,2,3,4,5]) devolverá 5.*/
+        /* Programa una funcion que revise si un texto comienza con la palabra 'java', ya sea mayuscula o minuscula y devuelva un boolean, ejemplo miFuncion("JaVascRiPT") devolverá true**/
+    </script>
+</body>
+
+</html>
